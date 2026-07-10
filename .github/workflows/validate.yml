@@ -1,0 +1,25 @@
+name: Validate organization profile
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m ruff check scripts tests
+      - run: python -m pytest tests -q
+      - run: python scripts/validate_profile.py
+      - run: python scripts/validate_community.py
+      - run: python -m scripts.validate_provenance
