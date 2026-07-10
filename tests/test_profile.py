@@ -15,7 +15,7 @@ def test_profile_requires_every_lane() -> None:
     assert "missing lane: Visual Systems" in errors
 
 
-def test_profile_rejects_unapproved_repository_links() -> None:
+def test_profile_accepts_renamed_sdk_repository_link() -> None:
     text = "# Vulca Systems\n" + "\n".join(
         [
             "Organization Control Plane",
@@ -25,6 +25,21 @@ def test_profile_rejects_unapproved_repository_links() -> None:
             "Research and Evaluation",
             "Integrations, Internal, and Archive",
             "https://github.com/vulca-org/vulca-visual-control-sdk",
+        ]
+    )
+    assert "unapproved public link" not in validate_profile(text)
+
+
+def test_profile_rejects_retired_sdk_repository_link() -> None:
+    text = "# Vulca Systems\n" + "\n".join(
+        [
+            "Organization Control Plane",
+            "Visual Systems",
+            "Writing Systems",
+            "Agent Infrastructure",
+            "Research and Evaluation",
+            "Integrations, Internal, and Archive",
+            "https://github.com/vulca-org/vulca",
         ]
     )
     assert "unapproved public link" in validate_profile(text)
