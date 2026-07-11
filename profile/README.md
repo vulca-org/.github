@@ -22,7 +22,7 @@ has one clear responsibility.
 
 ## Current public entry points
 
-- [Vulca SDK](https://github.com/vulca-org/vulca)
+- [Vulca Visual Control SDK](https://github.com/vulca-org/vulca-visual-control-sdk)
 - [Vulca agent plugin](https://github.com/vulca-org/vulca-plugin)
 - [Vulca ComfyUI integration](https://github.com/vulca-org/comfyui-vulca)
 
