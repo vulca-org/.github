@@ -23,7 +23,7 @@ has one clear responsibility.
 ## Current public entry points
 
 - [Vulca Visual Control SDK](https://github.com/vulca-org/vulca-visual-control-sdk)
-- [Vulca agent plugin](https://github.com/vulca-org/vulca-plugin)
+- [Vulca visual agent plugin](https://github.com/vulca-org/vulca-visual-agent-plugin)
 - [Vulca ComfyUI integration](https://github.com/vulca-org/comfyui-vulca)
 
 Repository naming and organization migration are in progress. We publish only

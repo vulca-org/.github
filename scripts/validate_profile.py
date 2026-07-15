@@ -16,7 +16,7 @@ LANES = (
 ALLOWED_URLS = {
     "https://github.com/vulca-org",
     "https://github.com/vulca-org/vulca-visual-control-sdk",
-    "https://github.com/vulca-org/vulca-plugin",
+    "https://github.com/vulca-org/vulca-visual-agent-plugin",
     "https://github.com/vulca-org/comfyui-vulca",
 }
 FORBIDDEN_MARKERS = (
