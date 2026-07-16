@@ -17,7 +17,7 @@ ALLOWED_URLS = {
     "https://github.com/vulca-org",
     "https://github.com/vulca-org/vulca-visual-control-sdk",
     "https://github.com/vulca-org/vulca-visual-agent-plugin",
-    "https://github.com/vulca-org/comfyui-vulca",
+    "https://github.com/vulca-org/vulca-comfyui-visual-nodes",
 }
 FORBIDDEN_MARKERS = (
     "Agent-native discipline checked",

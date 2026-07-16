@@ -24,7 +24,7 @@ has one clear responsibility.
 
 - [Vulca Visual Control SDK](https://github.com/vulca-org/vulca-visual-control-sdk)
 - [Vulca visual agent plugin](https://github.com/vulca-org/vulca-visual-agent-plugin)
-- [Vulca ComfyUI integration](https://github.com/vulca-org/comfyui-vulca)
+- [Vulca ComfyUI integration](https://github.com/vulca-org/vulca-comfyui-visual-nodes)
 
 Repository naming and organization migration are in progress. We publish only
 links that resolve today; approved future names appear after their repositories
